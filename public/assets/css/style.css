@@ -1,0 +1,32 @@
+/* Extra small custom animations */
+@keyframes floaty {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.floaty {
+    animation: floaty 6s ease-in-out infinite
+}
+
+/* Fancy gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #7c3aed, #0ea5e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+/* subtle glass blur */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+}

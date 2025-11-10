@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulkit Mangal — Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-gray-950 via-gray-900 to-black text-gray-100 antialiased leading-normal">
+
+    <!-- NAV -->
+    <header class="fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-extrabold gradient-text">Pulkit<span
+                    class="text-gray-300">Mangal</span></a>
+            <nav class="space-x-6 hidden md:flex items-center text-sm">
+                <a href="#home" class="hover:text-blue-400">Home</a>
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#experience" class="hover:text-blue-400">Experience</a>
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+                <a href="/upload/resume.pdf" target="_blank" download
+                    class="ml-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full shadow-lg hover:scale-105 transition-transform">⬇️
+                    Resume</a>
+            </nav>
+
+            <!-- mobile menu button -->
+            <div class="md:hidden">
+                <button id="burger" class="p-2 rounded-md glass">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile nav -->
+        <div id="mobileNav" class="hidden md:hidden px-6 pb-4">
+            <div class="flex flex-col gap-3">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="/upload/resume.pdf" target="_blank" download
+                    class="inline-block mt-2 px-4 py-2 bg-blue-600 rounded-full">Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center pt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+
+            <!-- Left: Intro + typing -->
+            <div>
+                <p class="text-sm text-gray-400 mb-3">Hello, my name is</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Pulkit Mangal</h1>
+                <h2 class="text-xl md:text-2xl mb-6 gradient-text">Software Engineer • Laravel • NodeJS • Full-Stack
+                </h2>
+
+                <p class="text-gray-300 max-w-xl mb-6">I build performant, scalable web applications and delightful user
+                    experiences. I love clean code, automation, and shipping products that solve real problems.</p>
+
+                <div class="flex items-center gap-4">
+                    <a href="/upload/resume.pdf" target="_blank" download
+                        class="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg hover:scale-105 transition">Download
+                        Resume</a>
+                    <a href="#projects"
+                        class="px-6 py-3 rounded-full border border-gray-700 hover:bg-white/5 transition">View
+                        Projects</a>
+                </div>
+
+                <!-- typing effect -->
+                <p class="mt-6 text-sm text-gray-400">I specialise in <span id="typed"
+                        class="font-medium text-blue-400"></span><span class="text-blue-400">|</span></p>
+
+                <!-- social icons -->
+                <div class="mt-6 flex items-center gap-4 text-gray-300">
+                    <!-- Replace hrefs with your actual profiles -->
+                    <a href="https://github.com/pulkit127" target="_blank" class="hover:text-white">GitHub</a>
+                    <a href="https://www.linkedin.com/in/pulkit-mangal-a45860227" target="_blank"
+                        class="hover:text-white">LinkedIn</a>
+                    <a href="mailto:pawanmangalcreative@gmail.com" class="hover:text-white">Email</a>
+                </div>
+            </div>
+
+            <!-- Right: Animated card / illustration -->
+            <div class="relative">
+                <div
+                    class="absolute -right-10 -top-10 w-48 h-48 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-400 opacity-20 blur-2xl floaty">
+                </div>
+                <div class="bg-gray-850 glass rounded-2xl p-6 shadow-2xl relative z-10">
+                    <img src="/upload/images/close2mi.png" alt="screenshot placeholder" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Featured Project — Close2Mi Project</h3>
+                    <p class="text-gray-300 text-sm"> Local business discovery platform built using Laravel and MySQL.
+                        Helps users find nearby stores, services, and deals in real time.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-4 gradient-text">About Me</h3>
+            <p class="text-gray-300 mb-6">I’m Pulkit Mangal, a Software Engineer skilled in developing dynamic web
+                applications using PHP, Laravel, Node.js, and modern frontend technologies. I specialize in API
+                integration, scalable architecture design, and delivering efficient, maintainable code that drives
+                business growth.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-3">
+                    <h4 class="text-sm text-gray-400">Top Skills</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 rounded">HTML</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">CSS</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">Bootstrap</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">Tailwind</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">JQuery</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">Core PHP</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">Laravel</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">Codelgnitor</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">NodeJS</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">MySQL</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">MongoDB</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded">API Integration</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-sm text-gray-400">Quick Info</h4>
+                    <ul class="text-gray-300 list-disc ml-5 mt-2">
+                        <li>Role: Software Engineer</li>
+                        <li>Email: pawanmangalcreative@gmail.com</li>
+                        <li>Location: Jaipur</li>
+                        <li>Open to: Freelance / Full-time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-8 gradient-text">Experience</h3>
+            <div class="space-y-6">
+
+                <!-- Premad Software Solution -->
+                <article class="bg-gray-800 p-6 rounded-lg shadow-lg transition transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3">
+                        <img src="/upload/images/logo/premad-logo.png" alt="Premad Software Solution Logo"
+                            class="w-10 h-10 rounded-full object-cover">
+                        <h4 class="text-xl font-semibold">Premad Software Solution</h4>
+                    </div>
+                    <p class="text-sm text-gray-400 italic mt-1">PHP Developer • Jan 2021 – Oct 2022</p>
+                    <p class="mt-3 text-gray-300">
+                        Developed and maintained dynamic web applications using PHP/Laravel, implemented REST APIs, and
+                        improved database performance.
+                    </p>
+                </article>
+
+                <!-- NimpleAppGenie -->
+                <article class="bg-gray-800 p-6 rounded-lg shadow-lg transition transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3">
+                        <img src="/upload/images/logo/nimpleappgenie-logo.png" alt="NimpleAppGenie Logo"
+                            class="w-10 h-10 rounded-full object-cover">
+                        <h4 class="text-xl font-semibold">NimpleAppGenie</h4>
+                    </div>
+                    <p class="text-sm text-gray-400 italic mt-1">PHP Developer • Nov 2022 – Jan 2024</p>
+                    <p class="mt-3 text-gray-300">
+                        Worked on full-stack features with Laravel and Bootstrap, integrated payment gateways, and
+                        managed third-party service integrations.
+                    </p>
+                </article>
+
+                <!-- Shifto Pvt. Ltd. -->
+                <article class="bg-gray-800 p-6 rounded-lg shadow-lg transition transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3">
+                        <img src="/upload/images/logo/shifto-logo.png" alt="Shifto Pvt. Ltd. Logo"
+                            class="w-10 h-10 rounded-full object-cover">
+                        <h4 class="text-xl font-semibold">Shifto Pvt. Ltd.</h4>
+                    </div>
+                    <p class="text-sm text-gray-400 italic mt-1">Software Engineer • Apr 2024 – Nov 2024</p>
+                    <p class="mt-3 text-gray-300">
+                        Handled frontend and backend tasks, improved UI using Tailwind CSS, and integrated multiple APIs
+                        for enterprise workflows.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-8 gradient-text">Projects</h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Close2Mi -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/close2mi.png" alt="Close2Mi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Close2Mi</h4>
+                        <p class="text-gray-300 mt-2">
+                            Local business discovery platform built using Laravel and MySQL.
+                            Helps users find nearby stores, services, and deals in real time.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Geo-based search using Google Maps API</li>
+                            <li>Business profile management with reviews</li>
+                            <li>JWT authentication & admin dashboard</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DRT -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/drt.webp" alt="DRT" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">DRT Portal</h4>
+                        <p class="text-gray-300 mt-2">
+                            Dispute Resolution Tracking system for case management and digital document handling.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Laravel backend with MySQL</li>
+                            <li>Dynamic case updates and notifications</li>
+                            <li>Role-based access for Admin & Advocates</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Civil Deal -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/construction.webp" alt="Civil Deal" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Civil Deal</h4>
+                        <p class="text-gray-300 mt-2">
+                            Construction project management system to track tenders, clients, and site progress.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Developed with Laravel and Bootstrap</li>
+                            <li>Custom modules for estimates & billing</li>
+                            <li>Cloud file storage and PDF reports</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aapni Taxi -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/aapni_taxi.jpeg" alt="Aapni Taxi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Aapni Taxi</h4>
+                        <p class="text-gray-300 mt-2">
+                            Taxi booking web app for local rides.
+                            Real-time fare estimation, driver assignment, and booking management.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Laravel + MySQL backend</li>
+                            <li>Google Maps distance matrix API</li>
+                            <li>Razorpay for ride payments</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chit Fund -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/chitfund.webp" alt="Chit Fund" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Chit Fund Management</h4>
+                        <p class="text-gray-300 mt-2">
+                            Web platform to manage chit groups, member subscriptions, and monthly bidding cycles.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Laravel framework with secure CRUD operations</li>
+                            <li>Automated calculations for installments & dividends</li>
+                            <li>PDF reports and admin dashboards</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DC Jewelry -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/dcjewelry.jpeg" alt="DC Jewelry" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">DC Jewelry</h4>
+                        <p class="text-gray-300 mt-2">
+                            Jewelry store management and e-commerce system for product catalogs and invoicing.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Developed with Laravel + Blade templates</li>
+                            <li>Inventory tracking with gold weight and karat value</li>
+                            <li>Invoice & GST billing module</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mosambi India -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/mosambiindia.PNG" alt="Mosambi India" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Mosambi India</h4>
+                        <p class="text-gray-300 mt-2">
+                            Online blood donation coordination platform connecting donors and recipients in real time.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Built REST APIs for donor management</li>
+                            <li>Razorpay integration for campaigns</li>
+                            <li>Notification system for urgent requests</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ShopRetailStock -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/shopretailstock.jpeg" alt="Shop Retail Stock"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Shop Retail Stock</h4>
+                        <p class="text-gray-300 mt-2">
+                            Inventory & billing system built for retail stores with real-time product tracking and GST
+                            billing.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Barcode scanning support</li>
+                            <li>Role-based authentication (Admin/Cashier)</li>
+                            <li>Dynamic reporting dashboard</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hub Project -->
+                <div
+                    class="bg-gradient-to-r from-gray-800 to-gray-850 rounded-lg overflow-hidden shadow-lg transform hover:scale-102 transition">
+                    <img src="/upload/images/hub.png" alt="Hub Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold">Hub Project</h4>
+                        <p class="text-gray-300 mt-2">
+                            Laravel-based media hub for user-generated content and streaming with role management.
+                        </p>
+                        <ul class="text-sm text-gray-400 mt-2 list-disc ml-5">
+                            <li>Media uploads & category filters</li>
+                            <li>Authentication and admin moderation</li>
+                            <li>Optimized media streaming</li>
+                        </ul>
+                        <div class="mt-4 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-full bg-blue-600">Live</a>
+                            <a href="#" class="px-4 py-2 rounded-full border">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-6 gradient-text">Contact</h3>
+            <p class="text-gray-300 mb-6">Want to work together or discuss a project? Send a message below or email me
+                at <a href="mailto:pawanmangalcreative@gmail.com"
+                    class="text-blue-400">pawanmangalcreative@gmail.com</a>.</p>
+
+            <form action="/submit" method="post" class="bg-gray-800 p-6 rounded-lg space-y-4">
+                <!-- Replace action with your form handler (Formspree, Netlify, or backend endpoint) -->
+                <input type="text" name="name" placeholder="Your name" required
+                    class="w-full p-3 rounded bg-gray-900" />
+                <input type="email" name="email" placeholder="Your email" required
+                    class="w-full p-3 rounded bg-gray-900" />
+                <input type="text" name="subject" placeholder="Subject" class="w-full p-3 rounded bg-gray-900" />
+                <textarea name="message" placeholder="Message" rows="5"
+                    class="w-full p-3 rounded bg-gray-900"></textarea>
+                <div class="flex items-center justify-between">
+                    <button type="submit"
+                        class="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full">Send
+                        Message</button>
+                    <span class="text-sm text-gray-400">Or email me directly</span>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 text-center text-gray-400">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>© <span id="year"></span> Pulkit Mangal</div>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/pulkit127" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pulkit-mangal-a45860227/" target="_blank">LinkedIn</a>
+                <a href="mailto:pawanmangalcreative@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
